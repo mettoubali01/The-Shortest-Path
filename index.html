@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Path Finder</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+		<script type="text/javascript" src="pathFinder.js"></script>
+
+		<style type="text/css">
+			div#start_section, div#end_section{
+				display: flex;
+    			align-items: center;
+			}
+			#start, #end{
+    			width: 20px;
+    			height: 20px;
+    			margin-left: 10px
+			}
+			div#start_section p, div#end_section p {
+				font-weight: bold;
+			}
+
+			button {	
+			  background-color: #008CBA;
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>***Path finder between two random points***</h1>
+		<div id="start_section">
+			<p>Start Point Color</p>:
+			<span id="start"></span> 
+					
+		</div>
+		<div id="end_section">
+			<p>End Point Color</p>:
+			<span id="end"></span> 
+					
+		</div>
+		<hr>
+
+		<p id="result"></p>
+	</body>
+</html>
